@@ -4,8 +4,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0;
-    background-color: black;
+    background-color: rgb(170, 170, 170);
 }
 
 #game-board {
@@ -14,15 +15,18 @@ body {
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
-    background-color: white;
+    background-color: rgb(164, 174, 218);
 }
 
 .snake {
-    background-color: aqua;
+    background-image: url('../img/snake.png');
     border: .25vmin solid black;
+    border-radius: 35%;
 }
 
 .food {
-    background-color: yellow;
-    border: .25vmin solid black;
+    background-color: red;
+    border: 1vmin solid;
+    border-color: rgb(164, 174, 218);
+    border-radius: 50%;
 }
